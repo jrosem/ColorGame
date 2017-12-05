@@ -5,6 +5,10 @@ h1{
   color:white;
 }
 
+#message{
+color:white;
+}
+
 .container{
   max-width: 600px;
   margin: 0 auto;

@@ -1,6 +1,8 @@
 body {
   background-color: #232323;
-  font-family: helvetica, bold;
+  font-family: "Montserrat", "helvetica";
+  font-weight: 500;
+  margin: 0;
 
 }
 h1{
@@ -8,29 +10,60 @@ h1{
   text-align: center;
   background-color: steelblue;
   margin:0;
-  padding:15px;
+  padding:15px 0;
+  line-height: 1.3;
 }
 
 #stripe{
   background-color: white;
   color:black;
-  height:30px;
+  height:auto;
   text-align: center;
-  margin:0
-  padding:5px;
+  margin:0;
+  text-transform: uppercase;
 }
 
 #message{
-color:black;
+background-color: white;
+color: black;
+font-weight:500;
+font-size: inherit;
+letter-spacing: 1px
 }
 
 #colorDisplay{
     text-transform: uppercase;
+    font-size:125%;
+}
+
+button{
+  border-style: none;
+  background-color: white;
+  color: steelblue;
+  padding:5px 5px;
+  font-weight:700;
+  font-size: inherit;
+  letter-spacing: 1px;
+  margin:0;
+  transition: background .4s;
+  -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  outline: none;
+}
+
+button:hover{
+  color:white;
+  background-color: steelblue;
+}
+
+#message{
+  display:inline-block;
+  width: 20%;
 }
 .container{
   max-width: 600px;
   margin: 0 auto;
-  padding-top:20px;
+  padding:20px 0;
 }
 .square {
   border-radius: 20%;
@@ -39,10 +72,13 @@ color:black;
   padding-bottom: 30%;
   float: left;
   margin:1.66%;
+  transition: background .5s;
+  -webkit-transition: background .5s;
+  -moz-transition: background .5s;
 }
 
 .selected{
-  background-color: lightblue;
+  background-color: steelblue;
   color: white;
   }
 }

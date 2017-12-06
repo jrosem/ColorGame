@@ -43,6 +43,8 @@ hardBtn.addEventListener("click", function(){
 resetButton.addEventListener("click", function(){
   colors = generateRandomColors(numSquares);
   pickedColor = pickColor();
+  messageDisplay.textContent = "";
+  this.textContent = "NEW COLORS";
   colorDisplay.textContent = pickedColor;
   for(var i = 0; i < squares.length; i++){
     squares[i].style.backgroundColor = colors[i];
@@ -59,13 +61,13 @@ for(var i = 0; i < squares.length; i++){
   var clickedColor = this.style.backgroundColor;
 
   if(clickedColor === pickedColor){
-    messageDisplay.textContent = "Correct!";
-    resetButton.textContent = "Play Again?";
+    messageDisplay.textContent = "CORRECT!";
+    resetButton.textContent = "PLAY AGAIN?";
     h1.style.backgroundColor = clickedColor;
     changeColors(clickedColor);
   } else {
       this.style.backgroundColor = "#232323";
-      messageDisplay.textContent = "Try Again";
+      messageDisplay.textContent = "TRY AGAIN";
     }
     });
   }
